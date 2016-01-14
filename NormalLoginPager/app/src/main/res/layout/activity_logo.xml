@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/qiutian"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+
+       <ProgressBar
+           android:id="@+id/pb_bar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"/>
+
+       <TextView
+           android:id="@+id/tv_loging"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:text="正在登陆......."
+           android:layout_below="@id/pb_bar"
+           android:textColor="#000000"
+           android:textSize="20dp"
+           />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+       <Button
+           android:id="@+id/btn_back"
+           android:layout_width="80dp"
+           android:layout_height="40dp"
+           android:text="取消"
+           android:textColor="#000000"
+           android:textSize="18sp"
+           android:background="@android:color/darker_gray"
+           />
+
+
+    </LinearLayout>
+
+</LinearLayout>
